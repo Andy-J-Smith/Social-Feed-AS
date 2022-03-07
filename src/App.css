@@ -1,5 +1,11 @@
+*{
+  background-color: aqua;
+}
+
+
 .border-box{
   border: 1px;
+  background-color:magenta;
   border-style: solid;
   border-color: black;
   margin: 1em;
