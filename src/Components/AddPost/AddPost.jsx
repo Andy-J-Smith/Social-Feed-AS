@@ -20,7 +20,7 @@ const AddPost = (props) => {
         <label>Name</label>
         <input
           type="text"
-          className="post-control"
+          className="post-group"
           value={name}
           onChange={(event) => setName(event.target.value)}
         />
