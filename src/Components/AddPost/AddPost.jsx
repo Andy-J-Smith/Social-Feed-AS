@@ -16,29 +16,25 @@ const AddPost = (props) => {
 
   return (
     <form onSubmit={handlePost} className="form-grid">
-      <div className="post-group">
+      <div className="post-group-name">
         <label>Name</label>
         <input
           type="text"
-          className="post-group"
+          className="post-name"
           value={name}
           onChange={(event) => setName(event.target.value)}
         />
       </div>
-      <div className="post-group">
+      <div className="post-group-post">
         <label>Post</label>
         <input
           type="text"
-          className="post-control"
+          className="post-post"
           value={post}
           onChange={(event) => setPost(event.target.value)}
         />
       </div>
-      <button
-        type="submit"
-        className="btn btn-primary"
-        style={{ "margin-top": "1em" }}
-      >
+      <button type="submit" className="btn btn-primary">
         Post
       </button>
     </form>

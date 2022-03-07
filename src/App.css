@@ -1,13 +1,21 @@
 *{
   background-color: white;
+  padding: 0;
+
 }
 
 
 .border-box{
   border: 1px;
-  background-color:magenta;
+  background-color: white;
+  border-radius: 2em;
   border-style: solid;
-  border-color: black;
+  border-color: blue;
   margin: 1em;
   padding: 1em;
+}
+
+.container-fluid{
+  padding: 1em;
+  
 }

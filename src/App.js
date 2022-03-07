@@ -17,10 +17,8 @@ function App() {
 
   return (
     <div className="container-fluid">
-      <div className="row">
-        <NavBar />
-      </div>
-      <div className="col-md-12">
+      <NavBar />
+      <div className="container-fluid">
         <div className="border-box">
           <AddPost addNewPost={addNewPost} />
         </div>
