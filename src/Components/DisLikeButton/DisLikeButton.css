@@ -1,19 +1,11 @@
-button {
-    color: grey;
-    text-decoration: none;
-    display: inline-block;
-
-}
-
 
 .inactive{
     background-color: inherit;
+    height: 30px;
+    display: inline;
 }
 
-.active-like{
-    background-color: blue;
-    color: white;
-}
+
 
 .active-dislike{
     background-color: red;

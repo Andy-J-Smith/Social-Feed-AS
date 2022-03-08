@@ -11,9 +11,8 @@ const DisplayPost = (props) => {
           return (
             <div key={index}>
               <div>{post.name}</div>
-              <div></div>
               <div>{post.post}</div>
-              <LikeButton message="Like" /> 
+              <LikeButton className="like" />
               <DisLikeButton message="DisLike" />
             </div>
           );
