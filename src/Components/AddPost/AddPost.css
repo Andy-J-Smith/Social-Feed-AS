@@ -2,9 +2,11 @@
     display: grid;
 }
 
-.post-group-name{
+
+.input.post-post{
     background-color: aqua;
-    color:bisque;
+}
 
-
+.label{
+    font-size: large;
 }

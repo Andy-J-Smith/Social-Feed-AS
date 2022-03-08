@@ -1,7 +1,5 @@
 *{
-  background-color: white;
-  padding: 0;
-
+  padding: 1em;
 }
 
 
@@ -18,4 +16,9 @@
 .container-fluid{
   padding: 1em;
   
+}
+
+.row{
+  background-color:aquamarine;
+  border: 1em;
 }

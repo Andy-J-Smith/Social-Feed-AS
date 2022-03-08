@@ -1,5 +1,6 @@
 .navbar {
   margin: 1em;
+  border: 1em;
   background-color:white;
   columns: inherit;
 }

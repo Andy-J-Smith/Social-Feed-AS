@@ -1,23 +1,21 @@
-import { tab } from "@testing-library/user-event/dist/tab";
 import React, { useState } from "react";
+import LikeButton from "../LikeButton/LikeButton";
 import "./DisplayPost.css";
 
 const DisplayPost = (props) => {
   return (
-    <table className="container-fluid">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Post</th>
-        </tr>
-      </thead>
-      <tbody className="container-fluid">
+    <table className="table">
+      <thead></thead>
+      <tbody>
         {props.parentPosts.map((post, index) => {
           return (
             <tr key={index}>
               <td>{post.name}</td>
+              <div></div>
               <td>{post.post}</td>
+              <LikeButton/>
             </tr>
+          
           );
         })}
       </tbody>

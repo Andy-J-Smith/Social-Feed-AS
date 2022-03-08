@@ -1,8 +1,9 @@
 .border-box{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
     border: 1px;
     background-color: white;
     border-style: solid;
     border-color: blue;
     margin: 1em;
-    padding: 1em;
+    padding: .3em;
   }
