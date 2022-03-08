@@ -5,22 +5,21 @@ import "./DisplayPost.css";
 
 const DisplayPost = (props) => {
   return (
-    <table className="table">
-      <thead></thead>
-      <tbody>
+    <div className="table">
+      <div>
         {props.parentPosts.map((post, index) => {
           return (
-            <tr key={index}>
-              <td>{post.name}</td>
+            <div key={index}>
+              <div>{post.name}</div>
               <div></div>
-              <td>{post.post}</td>
+              <div>{post.post}</div>
               <LikeButton message="Like" /> 
               <DisLikeButton message="DisLike" />
-            </tr>
+            </div>
           );
         })}
-      </tbody>
-    </table>
+      </div>
+    </div>
   );
 };
 

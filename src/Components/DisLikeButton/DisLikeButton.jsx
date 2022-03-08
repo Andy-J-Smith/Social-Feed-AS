@@ -15,7 +15,7 @@ const DisLikeButton = (props) => {
   return (
     <div>
       <img
-        src="../../images/thumbs-down-regular.svg"
+        src={DisLikeBtnImg}
         className={DisLikes}
         onClick={handleClick}
       />
