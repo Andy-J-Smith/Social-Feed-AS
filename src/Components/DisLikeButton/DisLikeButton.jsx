@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./DisLikeButton.css";
+import DisLikeBtnImg from "../../images/thumbs-down-regular.svg";
 
 const DisLikeButton = (props) => {
   const [DisLikes, setButtonClassDisLike] = useState("inactive");
@@ -14,7 +15,7 @@ const DisLikeButton = (props) => {
   return (
     <div>
       <img
-        src="../thumbs-down-regular.svg"
+        src="../../images/thumbs-down-regular.svg"
         className={DisLikes}
         onClick={handleClick}
       />
