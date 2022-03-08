@@ -1,0 +1,11 @@
+.inactive{
+    background-color: inherit;
+}
+
+.active-like{
+    background-color: blue;
+}
+
+.active-dislike{
+    background-color: red;
+}
