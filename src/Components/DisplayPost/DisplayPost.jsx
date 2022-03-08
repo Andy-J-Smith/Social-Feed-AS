@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DisLikeButton from "../DisLikeButton/DisLikeButton";
 import LikeButton from "../LikeButton/LikeButton";
 import "./DisplayPost.css";
 
@@ -13,9 +14,9 @@ const DisplayPost = (props) => {
               <td>{post.name}</td>
               <div></div>
               <td>{post.post}</td>
-              <LikeButton/>
+              <LikeButton message="Like" /> 
+              <DisLikeButton message="DisLike" />
             </tr>
-          
           );
         })}
       </tbody>

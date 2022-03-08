@@ -1,12 +1,25 @@
-import React, {useState} from "react";
-import { ReactComponent as Like  } from "./thumbs-up-regular.svg";
+import React, { useState } from "react";
+import "./LikeButton.css";
 
 const LikeButton = (props) => {
+  const [Likes, setButtonClassLike] = useState("inactive");
+
+  function handleClick() {
+    if (Likes === "inactive") {
+      setButtonClassLike("active-like");
+    } else {
+      setButtonClassLike("inactive");
+    }
+  }
+
   return (
-    <div className="like-btn">
-      <Like/>
+    <div>
+      <img
+        src="../thumbs-up-regular.svg"
+        className={Likes}
+        onClick={handleClick}
+      />
     </div>
-    
   );
 };
 

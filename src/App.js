@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import DisplayPost from "./Components/DisplayPost/DisplayPost";
 import AddPost from "./Components/AddPost/AddPost";
-import NavBar from "./Components/NavBar/NavBar";
-import LikeButton from "./Components/LikeButton/LikeButton";
+
 
 function App() {
   const [posts, setPosts] = useState([
