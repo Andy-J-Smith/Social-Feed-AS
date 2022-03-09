@@ -7,12 +7,12 @@ const DisplayPost = (props) => {
   return (
     <div className="container">
       <div>
-        {props.parentPosts.map((post, index) => {
+        {props.parentPosts.map((post, index) => {     //^calls and renders date passed in from addPost component//
           return (
             <div key={index}>
               <div className="name">{post.name}</div>
-              <div className="post">{post.post}</div>
-              <div className="date">{post.date}</div>
+              <div className="post">{post.post}</div>            
+              <div className="date">{post.date}</div>       
               <LikeButton />
             </div>
           );

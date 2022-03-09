@@ -2,30 +2,30 @@ import React, { useState } from "react";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
 const AddPost = (props) => {
-  const [name, setName] = useState("");
-  const [post, setPost] = useState("");
+  const [name, setName] = useState("");      //^Hooks//
+  const [post, setPost] = useState("");     //These catch data set up by onChange logic//
   const [date, setDate] = useState("");
 
-  function handlePost(event) {
-    event.preventDefault();
-    let newPost = {
+  function handlePost(event) {      //local function//
+    event.preventDefault();       //^Prevents page from refreshing//
+    let newPost = {               //data staged before function calls//
       name: name,
       post: post,
       date: date,
     };
     console.log(newPost);
-    props.addNewPost(newPost);
+    props.addNewPost(newPost);   //function call of props passes newPost 
   }
 
   return (
-    <form onSubmit={handlePost} className="container-fluid">
-      <label>Name</label>
+    <form onSubmit={handlePost} className="container-fluid">  //? Takes the input data from the form and passes it up to the 
+      <label>Name</label>                                     //? handlePost function//
       <input
         type="text"
         className="post-name"
-        value={name}
-        onChange={(event) => setName(event.target.value)}
-      />
+        value={name}        // must use same property that matches the hook//
+        onChange={(event) => setName(event.target.value)}   //setName is arrow function that passes user input to hooks executed by onChange call//
+      />                                                    
       <div></div>
       <label>Post</label>
       <input
