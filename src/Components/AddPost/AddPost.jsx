@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import ButtonOne from "../ButtonOne/ButtonOne";
+import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
 const AddPost = (props) => {
   const [name, setName] = useState("");
@@ -32,9 +34,12 @@ const AddPost = (props) => {
         onChange={(event) => setPost(event.target.value)}
       />
       <div></div>
-      <button type="submit" className="btn btn-primary">
-        Post
-      </button>
+      <PrimaryButton
+        backgroundColor={"blue"}
+        buttonText={"Post"}
+        color={"white"}
+        borderRadius={'1em'}
+      />
     </form>
   );
 };

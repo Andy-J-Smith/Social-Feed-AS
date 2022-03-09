@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import DisLikeButton from "../DisLikeButton/DisLikeButton";
 import LikeButton from "../LikeButton/LikeButton";
 import "./DisplayPost.css";
+import Button from "../CustomButton/Button.tsx";
+import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
 const DisplayPost = (props) => {
   return (
