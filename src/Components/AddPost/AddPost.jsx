@@ -40,6 +40,7 @@ const AddPost = (props) => {
         borderRadius={'1em'}
         position={'relative'}
         padding={'10px'}
+        
       />
     </form>
   );

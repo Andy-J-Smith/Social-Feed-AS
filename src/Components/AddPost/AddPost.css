@@ -1,12 +1,6 @@
-.form-grid{
+.form{
     display: grid;
+    background-color: honeydew;
 }
 
 
-.input.post-post{
-    background-color: aqua;
-}
-
-.label{
-    font-size: large;
-}

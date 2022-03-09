@@ -8,12 +8,12 @@
 
 .active-like{
     background-color: blue;
-    display: inline;
-    color:white;
-    height: 30px;
+    border-radius: 2em;
+    height: 35px;
 }
 
 .active-dislike{
     background-color: red;
-    height: 30px;
+    border-radius: 2em;
+    height: 35px;
 }

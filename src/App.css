@@ -1,24 +1,20 @@
+
 *{
-  padding: 1em;
+  padding: auto;
 }
 
 
-.border-box{
-  border: 1px;
-  background-color: white;
-  border-radius: 2em;
-  border-style: solid;
-  border-color: blue;
-  margin: 1em;
-  padding: 1em;
-}
 
 .container-fluid{
-  padding: 1em;
+  display: grid;
+  grid-template-columns: auto;
+  border-style: groove;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
   
 }
 
 .row{
-  background-color:aquamarine;
+  background-color:honeydew;
   border: 1em;
 }

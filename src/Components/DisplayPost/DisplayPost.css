@@ -1,4 +1,31 @@
-.element{
-  height: 20px;
-  width: 20px;
+
+
+.container > div {
+  display: grid;
+  background-color:honeydew;
+  grid-template-columns: auto;
+  text-align: left;
+  border: 1px;
+  margin: none;
+  border-color: black;
+  border-style: groove;
+
 }
+
+.container > div > div{
+  border-style: outset;
+  border-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+}
+
+.post{
+  border-style: outset;
+  background-color: white;
+
+}
+.name{
+  background-color: white;
+}
+
+
