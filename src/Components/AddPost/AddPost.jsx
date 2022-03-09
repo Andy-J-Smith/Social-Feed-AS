@@ -4,12 +4,14 @@ import PrimaryButton from "../PrimaryButton/PrimaryButton";
 const AddPost = (props) => {
   const [name, setName] = useState("");
   const [post, setPost] = useState("");
+  const [date, setDate] = useState("");
 
   function handlePost(event) {
     event.preventDefault();
     let newPost = {
       name: name,
       post: post,
+      date: date,
     };
     console.log(newPost);
     props.addNewPost(newPost);
@@ -32,15 +34,21 @@ const AddPost = (props) => {
         value={post}
         onChange={(event) => setPost(event.target.value)}
       />
+      <label>Date</label>
+      <input
+        type="date"
+        className="post-date"
+        value={date}
+        onChange={(event) => setDate(event.target.value)}
+      />
       <div></div>
       <PrimaryButton
         backgroundColor={"darkblue"}
         buttonText={"POST"}
         color={"white"}
-        borderRadius={'1em'}
-        position={'relative'}
-        padding={'10px'}
-        
+        borderRadius={"1em"}
+        position={"relative"}
+        padding={"10px"}
       />
     </form>
   );

@@ -12,7 +12,7 @@ const DisplayPost = (props) => {
             <div key={index}>
               <div className="name">{post.name}</div>
               <div className="post">{post.post}</div>
-              <DateTime/>
+              <div className="date">{post.date}</div>
               <LikeButton />
             </div>
           );
