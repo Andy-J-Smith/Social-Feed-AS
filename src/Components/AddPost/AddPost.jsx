@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ButtonOne from "../ButtonOne/ButtonOne";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
 const AddPost = (props) => {
@@ -35,10 +34,12 @@ const AddPost = (props) => {
       />
       <div></div>
       <PrimaryButton
-        backgroundColor={"blue"}
-        buttonText={"Post"}
+        backgroundColor={"darkblue"}
+        buttonText={"POST"}
         color={"white"}
         borderRadius={'1em'}
+        position={'relative'}
+        padding={'10px'}
       />
     </form>
   );

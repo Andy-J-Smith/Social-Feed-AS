@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import DisLikeButton from "../DisLikeButton/DisLikeButton";
+import React from "react";
 import LikeButton from "../LikeButton/LikeButton";
 import "./DisplayPost.css";
-import Button from "../CustomButton/Button.tsx";
-import PrimaryButton from "../PrimaryButton/PrimaryButton";
+
 
 const DisplayPost = (props) => {
+
+
   return (
     <div className="table">
       <div>
@@ -14,8 +14,7 @@ const DisplayPost = (props) => {
             <div key={index}>
               <div>{post.name}</div>
               <div>{post.post}</div>
-              <LikeButton className="like" />
-              <DisLikeButton message="DisLike" />
+              <LikeButton/>
             </div>
           );
         })}

@@ -10,9 +10,12 @@ export default function PrimaryButton({
   borderRadius,
   fontSize,
   buttonText,
-  className,
+  position,padding,margin,
+  image,
   onClick,
   onSubmit,
+  className,
+  handleClick,
 }) {
   return (
     <button
@@ -26,11 +29,16 @@ export default function PrimaryButton({
         borderRadius,
         fontSize,
         buttonText,
-        className,
-        onClick,
-        onSubmit,
+        position,
+        padding,
+        margin,
+        image,
       }}
     >
+      {handleClick}
+      {onClick}
+      {onSubmit}
+      {className}
       {buttonText}
     </button>
   );
